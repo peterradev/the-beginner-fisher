@@ -1,0 +1,234 @@
+:root {
+  --main-color: #795a2c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.navbar {
+  color: white;
+  padding: 0 5rem;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  background-color: #795a2cc7;
+  position: fixed;
+  z-index: 2;
+  /* filter: opacity(0.8); */
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo a {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.logo-svg {
+  /* display: inline; */
+  max-width: 32px;
+  max-height: 32px;
+}
+
+.links {
+  display: flex;
+  list-style: none;
+}
+
+.link {
+  color: white;
+
+  padding: 0 1rem;
+  /* padding-bottom: 1rem; */
+  margin-bottom: 10px;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.link:hover {
+  border-bottom: 3px solid #3f7a27;
+  /* opacity: 0.9; */
+}
+
+header {
+  /* position: absolute; */
+  background-image: url("./Images/claudia-chiavazza-N9vsB6OEeKM-unsplash.jpg");
+  background-position: center;
+  size: cover;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+header h1 {
+  color: #f4f4f4cb;
+  font-size: 2.5rem;
+}
+
+/* header h1:after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+} */
+
+.underline {
+  background: transparent;
+  border-radius: 10px;
+  height: 5px;
+  width: 100%;
+  box-shadow: 0 55px 0 0 rgba(255, 255, 255, 0.288);
+}
+
+.center-stage {
+  /* justify-content: center; */
+  /* position: center; */
+  width: 500px;
+  height: 500px;
+  opacity: 0.65;
+  filter: blur(1px);
+}
+
+/* About */
+.about {
+  background-color: #333;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.about h1 {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #795a2c;
+  position: relative;
+}
+
+.about h1::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 9rem;
+  height: 10px;
+  transform: skew(-12deg) translateX(-7.5%);
+  background: rgba(238, 111, 87, 0.5);
+  z-index: 3;
+}
+
+.info {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  /* grid-column-start: 3;
+  grid-column-end: 5; */
+}
+
+.about p {
+  padding-top: 1rem;
+  color: #f4f4f4;
+  padding: 0 1.5rem;
+  max-width: 400px;
+  /* text-align: left !important; */
+}
+
+.fishing {
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+/* 
+img {
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 97.8vw;
+} */
+
+/* Footer */
+.footer {
+  color: white;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #795a2c;
+  z-index: 3;
+  height: 30px;
+}
+
+/* Lures.html */
+
+body {
+  background-color: #333333;
+  color: #f4f4f4;
+}
+
+.lures-page {
+  padding-top: 4.5rem;
+}
+
+.welcome {
+  align-items: center;
+  text-align: center;
+}
+
+.welcome h1 {
+  font-size: 4rem;
+  /* font-weight: 800; */
+}
+
+/* CARDS */
+
+.lures {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  margin: 0 4rem;
+}
+
+.card {
+  overflow: hidden;
+  margin: 1rem;
+  /* width: 300px; */
+  height: 400px;
+  padding: 1rem;
+  max-height: 300px;
+  /* width: 100px;
+  height: 150px; */
+  background-color: #fff;
+  color: #333;
+  border-radius: 15px;
+}
