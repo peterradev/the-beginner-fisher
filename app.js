@@ -21,6 +21,7 @@ app.use('/lures', () =>{
 })
 
 app.use(express.static(__dirname));
+// app.use(express.static(__dirname + '/lures'));
 
 // ROUTES
 app.get('/', (req, res) => {

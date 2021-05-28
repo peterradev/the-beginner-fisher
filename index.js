@@ -27,7 +27,7 @@ class UI {
 const ui = new UI();
 
 const getLures = () => {
-  fetch('http://localhost:3000/lures')
+  fetch('http://localhost:5000/lures')
     .then(res => res.json())
     .then(data => ui.showLures(data));
 }
