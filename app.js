@@ -20,6 +20,8 @@ app.use('/lures', () =>{
   console.log('This is a middleware running');
 })
 
+app.use(express.static(__dirname));
+
 // ROUTES
 app.get('/', (req, res) => {
   res.send('We are on home');
