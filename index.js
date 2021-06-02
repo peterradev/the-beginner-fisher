@@ -27,7 +27,7 @@ class UI {
 const ui = new UI();
 
 const getLures = () => {
-  fetch('http://localhost:5000/lures')
+  fetch('https://the-beginner-fisher.herokuapp.com/lures')
     .then(res => res.json())
     .then(data => ui.showLures(data));
 }
