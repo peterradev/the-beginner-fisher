@@ -20,7 +20,7 @@ app.use('/lures', () =>{
   console.log('This is a middleware running');
 })
 
-app.use(express.static(__dirname));
+app.use(express.static(__dirname + '/'));
 // app.use(express.static(__dirname + '/lures'));
 
 // ROUTES
