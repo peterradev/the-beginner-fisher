@@ -5,8 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-dev": "npm i -dev",
     "dev": "nodemone app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "postdeploy": "npm run start"
   },
   "keywords": [],
   "author": "",
